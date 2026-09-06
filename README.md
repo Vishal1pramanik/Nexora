@@ -83,9 +83,7 @@ For a public submission, deploy the `dist/` output and replace this local URL wi
 
 ## GitHub Repository
 
-Repository: `https://github.com/REPLACE_WITH_GITHUB_USERNAME/nexora-landing-page`
-
-Replace the placeholder URL above after the public repository is created.
+Repository: [https://github.com/Vishal1pramanik/Nexora](https://github.com/Vishal1pramanik/Nexora)
 
 ## Screenshots
 
