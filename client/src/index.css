@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+	--color-nexora-bg: #0b0d0f;
+	--color-nexora-panel: #111417;
+	--color-nexora-ink: #f1f3f4;
+	--color-nexora-muted: #8d969f;
+	--color-nexora-line: #252b30;
+	--color-nexora-blue: #5ba7ff;
+	--font-display: 'Space Grotesk', sans-serif;
+	--font-body: 'Manrope', sans-serif;
+	--font-mono: 'DM Mono', monospace;
+}
+
+:root { font-synthesis: none; text-rendering: optimizeLegibility; }

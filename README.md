@@ -98,29 +98,32 @@ The primary screenshot is stored at `docs/screenshots/nexora-home.png` for repos
 ## Project Structure
 
 ```text
-src/
-  App.jsx       Page composition root
-  App.css       NEXORA visual system and responsive layout
-  index.css     Global rendering defaults
-  main.jsx      React entry point
-  Components/   Reusable section components and local interaction state
-    Navbar.jsx
-    Hero.jsx
-    Features.jsx
-    Product.jsx
-    HowItWorks.jsx
-    Statistics.jsx
-    Solutions.jsx
-    Testimonials.jsx
-    Pricing.jsx
-    FAQ.jsx
-    FinalCTA.jsx
-    Footer.jsx
-  Pages/        Full-page compositions
-    AboutPage.jsx
-public/
-  favicon.svg
-index.html
-about.html       Legacy-compatible About entry point
+client/
+  index.html    Main Vite entry point
+  about.html    Standalone About entry point
+  about/index.html Clean /about entry point
+  src/
+    App.jsx       Page composition root
+    App.css       NEXORA visual system and responsive layout
+    index.css     Global rendering defaults
+    main.jsx      React entry point
+    about-main.jsx About page entry point
+    Components/   Reusable section components and local interaction state
+      Navbar.jsx
+      Hero.jsx
+      Features.jsx
+      Product.jsx
+      HowItWorks.jsx
+      Statistics.jsx
+      Solutions.jsx
+      Testimonials.jsx
+      Pricing.jsx
+      FAQ.jsx
+      FinalCTA.jsx
+      Footer.jsx
+    Pages/        Full-page compositions
+      AboutPage.jsx
+  public/        Static assets and favicons
+vite.config.js   Vite source and build configuration
 vercel.json      About route rewrite for Vercel
 ```
