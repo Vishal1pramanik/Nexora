@@ -1,9 +1,15 @@
-export default function Footer() {
+export default function Footer({ isAboutPage = false }) {
+  const sectionLink = (section) =>
+    isAboutPage ? `/#${section}` : `#${section}`;
+
   return (
     <footer className="site-footer">
       <div className="footer-main">
         <div className="footer-brand">
-          <a className="logo" href="#top">
+          <a
+            className="logo"
+            href={isAboutPage ? "/about.html#about-top" : "#top"}
+          >
             <span className="logo-symbol">N</span>
             <span>NEXORA</span>
           </a>
@@ -11,27 +17,33 @@ export default function Footer() {
         </div>
         <div className="footer-column">
           <h3>Product</h3>
-          <a href="#features">Features</a>
-          <a href="#solutions">Solutions</a>
-          <a href="#pricing">Pricing</a>
+          <a href={sectionLink("features")}>Features</a>
+          <a href={sectionLink("solutions")}>Solutions</a>
+          <a href={sectionLink("pricing")}>Pricing</a>
         </div>
         <div className="footer-column">
           <h3>Company</h3>
-          <a href="#product">About</a>
+          <a href="/about.html">About</a>
           <a href="mailto:careers@nexora.example">Careers</a>
           <a href="mailto:hello@nexora.example">Contact</a>
         </div>
         <div className="footer-column">
           <h3>Resources</h3>
-          <a href="#faq">FAQ</a>
-          <a href="#process">How it works</a>
-          <a href="#product">Product overview</a>
+          <a href={sectionLink("faq")}>FAQ</a>
+          <a href={sectionLink("process")}>How it works</a>
+          <a href={sectionLink("product")}>Product overview</a>
         </div>
         <div className="footer-column">
           <h3>Connect</h3>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://x.com/" target="_blank" rel="noreferrer">X / Twitter ↗</a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            LinkedIn ↗
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noreferrer">
+            X / Twitter ↗
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+            Instagram ↗
+          </a>
         </div>
       </div>
       <div className="footer-bottom">

@@ -1246,6 +1246,75 @@ h2 em {
   padding: 75px 40px 28px;
   border-top: 1px solid var(--line);
 }
+
+.about-hero {
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.about-hero h1 {
+  max-width: 780px;
+  margin-bottom: 30px;
+}
+
+.about-hero p {
+  max-width: 560px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.about-product {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 105px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.about-product-visual {
+  min-width: 0;
+}
+
+.principles-section {
+  border-bottom: 1px solid var(--line);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 85px;
+}
+
+.principle-card {
+  min-height: 230px;
+  padding: 24px 22px;
+  border: 1px solid var(--line);
+}
+
+.principle-card h3 {
+  margin-top: 75px;
+  font: 500 19px var(--display);
+  letter-spacing: -0.035em;
+}
+
+.principle-card p {
+  max-width: 270px;
+  margin-top: 13px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.about-closing {
+  padding-bottom: 150px;
+}
 .footer-main {
   display: grid;
   grid-template-columns: 2.1fr repeat(4, 1fr);
@@ -1346,6 +1415,24 @@ h2 em {
   .site-footer {
     padding: 65px 20px 25px;
   }
+
+  .about-hero {
+    min-height: 620px;
+  }
+
+  .about-product {
+    grid-template-columns: 1fr;
+    gap: 75px;
+  }
+
+  .about-product .product-copy {
+    order: -1;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 55px;
+  }
 }
 @media (max-width: 500px) {
   .pricing-card {
@@ -1371,6 +1458,22 @@ h2 em {
     gap: 10px;
     line-height: 1.5;
   }
+
+  .about-hero h1 {
+    font-size: 60px;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principle-card {
+    min-height: 200px;
+  }
+
+  .principle-card h3 {
+    margin-top: 45px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1394,4 +1497,9 @@ h2 em {
     right: 0;
   }
 }
-rbit-one { left: 0; }.orbit-two { right: 0; } 
+rbit-one {
+  left: 0;
+}
+.orbit-two {
+  right: 0;
+}
