@@ -1,7 +1,7 @@
-import Arrow from "./Arrow";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import ProductPreview from "./ProductPreview";
+import Arrow from "../Components/Arrow";
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
+import ProductPreview from "../Components/ProductPreview";
 
 const principles = [
   [

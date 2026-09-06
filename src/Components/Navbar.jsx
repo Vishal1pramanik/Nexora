@@ -11,7 +11,7 @@ export default function Navbar({ isAboutPage = false }) {
     <header className="site-header relative z-20 flex items-center">
       <a
         className="logo"
-        href={isAboutPage ? "/about.html#about-top" : "#top"}
+        href={isAboutPage ? "/about#about-top" : "#top"}
         onClick={closeMenu}
       >
         <span className="logo-symbol">N</span>
@@ -33,7 +33,7 @@ export default function Navbar({ isAboutPage = false }) {
         <a href={sectionLink("faq")} onClick={closeMenu}>
           FAQ
         </a>
-        <a href="/about.html" onClick={closeMenu}>
+        <a href="/about" onClick={closeMenu}>
           About
         </a>
       </nav>

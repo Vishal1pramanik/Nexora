@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import "./App.css";
-import AboutPage from "./Components/AboutPage";
+import AboutPage from "./Pages/AboutPage";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

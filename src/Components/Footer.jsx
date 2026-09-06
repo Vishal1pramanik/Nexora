@@ -6,10 +6,7 @@ export default function Footer({ isAboutPage = false }) {
     <footer className="site-footer">
       <div className="footer-main">
         <div className="footer-brand">
-          <a
-            className="logo"
-            href={isAboutPage ? "/about.html#about-top" : "#top"}
-          >
+          <a className="logo" href={isAboutPage ? "/about#about-top" : "#top"}>
             <span className="logo-symbol">N</span>
             <span>NEXORA</span>
           </a>
@@ -23,7 +20,7 @@ export default function Footer({ isAboutPage = false }) {
         </div>
         <div className="footer-column">
           <h3>Company</h3>
-          <a href="/about.html">About</a>
+          <a href="/about">About</a>
           <a href="mailto:careers@nexora.example">Careers</a>
           <a href="mailto:hello@nexora.example">Contact</a>
         </div>

@@ -32,7 +32,7 @@ The project is designed to run locally with Vite at `http://localhost:5173/`.
 - Smooth anchor scrolling and visible keyboard focus states
 - Reduced-motion support
 - Responsive footer with product, company, resource, and social links
-- Dedicated About page at `/about.html` with NEXORA principles and product story
+- Dedicated About page at `/about` with NEXORA principles and product story
 
 ## Explanation
 
@@ -116,9 +116,11 @@ src/
     FAQ.jsx
     FinalCTA.jsx
     Footer.jsx
+  Pages/        Full-page compositions
     AboutPage.jsx
 public/
   favicon.svg
 index.html
-about.html
+about.html       Legacy-compatible About entry point
+vercel.json      About route rewrite for Vercel
 ```
